@@ -70,17 +70,8 @@
 		"dist"
 	],
 	"publishConfig": {
-		"access": "public"
+		"access": "restricted"
 	},
-	"keywords": [
-		"Chakra UI",
-		"downshift",
-		"autocomplete",
-		"combobox",
-		"react",
-		"chakra-ui",
-		"multiselect-chakra-ui"
-	],
 	"dependencies": {
 		"@chakra-ui/icons": "^1.0.3",
 		"downshift": "^6.0.6",
