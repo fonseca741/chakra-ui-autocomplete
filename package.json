@@ -1,6 +1,6 @@
 {
-	"name": "chakra-ui-autocomplete",
-	"version": "1.4.2",
+	"name": "chakra-ui-autocomplete-adapted",
+	"version": "1.4.3",
 	"description": "An accessible autocomplete utility library built for chakra UI",
 	"author": "Andrew Miracle <me@andrewmiracle.com>",
 	"license": "MIT",
@@ -81,10 +81,6 @@
 		"chakra-ui",
 		"multiselect-chakra-ui"
 	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/koolamusic/chakra-ui-autocomplete.git"
-	},
 	"dependencies": {
 		"@chakra-ui/icons": "^1.0.3",
 		"downshift": "^6.0.6",

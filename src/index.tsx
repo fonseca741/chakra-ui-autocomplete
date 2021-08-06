@@ -33,7 +33,7 @@ export interface CUIAutoCompleteProps<T extends Item>
   extends UseMultipleSelectionProps<T> {
   items: T[]
   placeholder: string
-  label: string
+  label?: string
   highlightItemBg?: string
   onCreateItem?: (item: T) => void
   optionFilterFunc?: (items: T[], inputValue: string) => T[]
@@ -224,13 +224,15 @@ export const CUIAutoComplete = <T extends Item>(
 
   return (
     <Stack>
-      <FormLabel {...{ ...getLabelProps({}), ...labelStyleProps }}>
-        {label}
-      </FormLabel>
+      {label && (
+        <FormLabel {...{ ...getLabelProps({}), ...labelStyleProps }}>
+          {label}
+        </FormLabel>
+      )}
 
       {/* ---------Stack with Selected Menu Tags above the Input Box--------- */}
       {selectedItems && (
-        <Stack spacing={2} isInline flexWrap='wrap'>
+        <Stack spacing={1} isInline flexWrap='wrap'>
           {selectedItems.map((selectedItem, index) => (
             <Tag
               mb={1}
@@ -302,7 +304,7 @@ export const CUIAutoComplete = <T extends Item>(
       {/* -----------Section that renders the input element ----------------- */}
 
       {/* -----------Section that renders the Menu Lists Component ----------------- */}
-      <Box pb={4} mb={4}>
+      <Box>
         <List
           bg='white'
           borderRadius='4px'
