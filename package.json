@@ -70,7 +70,7 @@
 		"dist"
 	],
 	"publishConfig": {
-		"access": "restricted"
+		"access": "public"
 	},
 	"dependencies": {
 		"@chakra-ui/icons": "^1.0.3",
